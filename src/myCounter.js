@@ -16,14 +16,14 @@
 */
 
 const myCounter = () => {
-  var myArray = [];
-  for (var counter = 0; counter <= 3; counter += 1) {
-    myArray.push(counter);
-    for (var counter = 2; counter <= 3; counter += 1) {
-      myArray.push(counter);
+  const myArray = [];
+  for (let index = 0; index <= 3; index += 1) {
+    myArray.push(index);
+    for (let index1 = 2; index1 <= 3; index1 += 1) {
+      myArray.push(index1);
     }
   }
   return myArray;
 };
-
+console.log(myCounter());
 module.exports = myCounter;
